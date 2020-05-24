@@ -1,0 +1,687 @@
+
+<!DOCTYPE html>
+
+<html lang="SK">
+  <head>
+    <meta charset="utf-8" />
+    <title>bakalarka package &#8212; Dokumentácia bakalarka </title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Hľadať" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="bakalarka-package">
+<h1>bakalarka package<a class="headerlink" href="#bakalarka-package" title="Trvalý odkaz na tento nadpis">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+</div>
+<div class="section" id="module-bakalarka.forms">
+<span id="bakalarka-forms-module"></span><h2>bakalarka.forms module<a class="headerlink" href="#module-bakalarka.forms" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>This is the forms module.</p>
+<p>Provides LoginForm class for app.</p>
+<dl class="py class">
+<dt id="bakalarka.forms.LoginForm">
+<em class="property">class </em><code class="sig-prename descclassname">bakalarka.forms.</code><code class="sig-name descname">LoginForm</code><span class="sig-paren">(</span><em class="sig-param">formdata=&lt;object object&gt;</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.forms.LoginForm" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Základ: <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_wtf.form.FlaskForm</span></code></p>
+<p>LoginForm model.</p>
+<dl class="py attribute">
+<dt id="bakalarka.forms.LoginForm.email">
+<code class="sig-name descname">email</code><a class="headerlink" href="#bakalarka.forms.LoginForm.email" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Email input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>StringField</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="bakalarka.forms.LoginForm.password">
+<code class="sig-name descname">password</code><a class="headerlink" href="#bakalarka.forms.LoginForm.password" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Password input.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>PasswordField</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="bakalarka.forms.LoginForm.remember">
+<code class="sig-name descname">remember</code><a class="headerlink" href="#bakalarka.forms.LoginForm.remember" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Remember me checkbox.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>BooleanField</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="bakalarka.forms.LoginForm.submit">
+<code class="sig-name descname">submit</code><a class="headerlink" href="#bakalarka.forms.LoginForm.submit" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Submit button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>SubmitField</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id0">
+<code class="sig-name descname">email</code><em class="property"> = &lt;UnboundField(StringField, ('Email',), {'validators': [&lt;wtforms.validators.DataRequired object&gt;, &lt;wtforms.validators.Email object&gt;]})&gt;</em><a class="headerlink" href="#id0" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="id1">
+<code class="sig-name descname">password</code><em class="property"> = &lt;UnboundField(PasswordField, ('Password',), {'validators': [&lt;wtforms.validators.DataRequired object&gt;]})&gt;</em><a class="headerlink" href="#id1" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="id2">
+<code class="sig-name descname">remember</code><em class="property"> = &lt;UnboundField(BooleanField, ('Remember Me',), {})&gt;</em><a class="headerlink" href="#id2" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="id3">
+<code class="sig-name descname">submit</code><em class="property"> = &lt;UnboundField(SubmitField, ('Login',), {})&gt;</em><a class="headerlink" href="#id3" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-bakalarka.jobs">
+<span id="bakalarka-jobs-module"></span><h2>bakalarka.jobs module<a class="headerlink" href="#module-bakalarka.jobs" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>This is the jobs module.</p>
+<p>Sets jobs to APSCHEDULER and set refresh to 00:00:00</p>
+<dl class="py function">
+<dt id="bakalarka.jobs.initializer">
+<code class="sig-prename descclassname">bakalarka.jobs.</code><code class="sig-name descname">initializer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.jobs.initializer" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Load and sets events for actual date</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.jobs.setBlinds">
+<code class="sig-prename descclassname">bakalarka.jobs.</code><code class="sig-name descname">setBlinds</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vyska</span></em>, <em class="sig-param"><span class="n">uhol</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.jobs.setBlinds" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Dummy function to show interaction with blinds</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-bakalarka.models">
+<span id="bakalarka-models-module"></span><h2>bakalarka.models module<a class="headerlink" href="#module-bakalarka.models" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>This is the models module.</p>
+<p>Provides User class for database.</p>
+<dl class="py class">
+<dt id="bakalarka.models.User">
+<em class="property">class </em><code class="sig-prename descclassname">bakalarka.models.</code><code class="sig-name descname">User</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.models.User" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Základ: <code class="xref py py-class docutils literal notranslate"><span class="pre">sqlalchemy.ext.declarative.api.Model</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">flask_login.mixins.UserMixin</span></code></p>
+<p>User model.</p>
+<dl class="py attribute">
+<dt id="bakalarka.models.User.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#bakalarka.models.User.id" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>PK in database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="bakalarka.models.User.username">
+<code class="sig-name descname">username</code><a class="headerlink" href="#bakalarka.models.User.username" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Username of user.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="bakalarka.models.User.email">
+<code class="sig-name descname">email</code><a class="headerlink" href="#bakalarka.models.User.email" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Email of user.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="bakalarka.models.User.password">
+<code class="sig-name descname">password</code><a class="headerlink" href="#bakalarka.models.User.password" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Password of user, crypted by Bcrypt.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="bakalarka.models.User.calendarID">
+<code class="sig-name descname">calendarID</code><a class="headerlink" href="#bakalarka.models.User.calendarID" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>ID of Google Calendar to work with scheduler.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id4">
+<code class="sig-name descname">calendarID</code><a class="headerlink" href="#id4" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="id5">
+<code class="sig-name descname">email</code><a class="headerlink" href="#id5" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="id6">
+<code class="sig-name descname">id</code><a class="headerlink" href="#id6" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="id7">
+<code class="sig-name descname">password</code><a class="headerlink" href="#id7" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="id8">
+<code class="sig-name descname">username</code><a class="headerlink" href="#id8" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.models.load_user">
+<code class="sig-prename descclassname">bakalarka.models.</code><code class="sig-name descname">load_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.models.load_user" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Query to ged user by ID</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-bakalarka.routes">
+<span id="bakalarka-routes-module"></span><h2>bakalarka.routes module<a class="headerlink" href="#module-bakalarka.routes" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>This is the routes module.</p>
+<p>All routes(endpoints) provided for app.</p>
+<dl class="py function">
+<dt id="bakalarka.routes.account">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">account</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.account" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>This is the account route endpoint.</p>
+<p>Prints APPSCEDULER jobs list into console.
+Redirect to /setCalendar to make list of possible callendar for user to sete.</p>
+<dl class="simple">
+<dt>GET:</dt><dd><dl class="simple">
+<dt>responses:</dt><dd><dl class="simple">
+<dt>302:</dt><dd><p>description: Redirect to /setCalendar.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.routes.createEntry">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">createEntry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.createEntry" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>This is the createEntry route endpoint.</p>
+<p>Endpoint to create event in Google Calendar and Events.json.
+To add Events.json entry writeEvent() is called.</p>
+<dl class="simple">
+<dt>POST:</dt><dd><dl class="simple">
+<dt>parameters:</dt><dd><ul class="simple">
+<li><p>name: vyska
+in: path
+type: int
+required: true
+description: Height of blinds to be set.</p></li>
+<li><p>name: uhol
+in: path
+type: int
+required: true
+description: Angle of blinds to be set.</p></li>
+<li><p>name: date
+in: path
+type: date
+required: true
+description: Date of event to be executed.</p></li>
+<li><p>name: time
+in: path
+type: time
+required: true
+description: Time of event to be executed.</p></li>
+</ul>
+</dd>
+<dt>responses:</dt><dd><dl class="simple">
+<dt>302:</dt><dd><p>description: Event added, redirect to /scheduler.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.routes.deleteEvent">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">deleteEvent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mid</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.deleteEvent" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Remove event from Events.json.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametre</dt>
+<dd class="field-odd"><p><strong>mid</strong> – ID of event to be removed.</p>
+</dd>
+<dt class="field-even">Vracia</dt>
+<dd class="field-even"><p>True for success, False otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.routes.home">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">home</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.home" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>This is the home route endpoint.</p>
+<p>If credentials are not set or authenticated, oauth2callback() is called.
+Credentials are stored in flask.session[‚credentials‘].</p>
+<dl class="simple">
+<dt>GET:</dt><dd><dl class="simple">
+<dt>responses:</dt><dd><dl class="simple">
+<dt>200:</dt><dd><p>description: It renders the home.html template.</p>
+</dd>
+<dt>302:</dt><dd><p>description: Calls oauth2callback() to authenticate user.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.routes.login">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">login</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.login" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>This is the login route endpoint.</p>
+<p>Compare fetched data from LoginForm with database entries.</p>
+<dl>
+<dt>POST:</dt><dd><dl class="simple">
+<dt>parameters:</dt><dd><ul class="simple">
+<li><p>name: email
+in: path
+type: string
+required: true
+description: email to login</p></li>
+<li><p>name: password
+in: path
+type: string
+required: true
+description: password to login</p></li>
+</ul>
+</dd>
+<dt>responses:</dt><dd><dl class="simple">
+<dt>302:</dt><dd><p>description: User is uthenticated, redirect to /home</p>
+</dd>
+<dt>200:</dt><dd><p>description: User is not uthenticated, redirect to /login</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>GET:</dt><dd><dl>
+<dt>responses:</dt><dd><dl>
+<dt>200:</dt><dd><p>description: It renders the login.html template.
+parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>name: title
+value: ‚Login‘
+type: string
+description: Title of page.</p></li>
+<li><p>name: form
+value: form
+type: LoginForm()
+description: LoginForm object to fetch login data.</p></li>
+</ul>
+</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.routes.logout">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">logout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.logout" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>This is the logout route endpoint.</p>
+<p>Log out current user.</p>
+<dl class="simple">
+<dt>GET:</dt><dd><dl class="simple">
+<dt>responses:</dt><dd><dl class="simple">
+<dt>302:</dt><dd><p>description: Log out user and redirect to /home.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.routes.oauth2callback">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">oauth2callback</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.oauth2callback" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>This is the oauth2callback route endpoint.</p>
+<p>This route/function is called by Google when user Accept/Refuse the consent of Google.
+Sets flask.session[‚credentials‘].</p>
+<dl class="simple">
+<dt>GET:</dt><dd><dl class="simple">
+<dt>responses:</dt><dd><dl class="simple">
+<dt>302:</dt><dd><p>description: Google login redirect.</p>
+</dd>
+<dt>200:</dt><dd><p>description: Redirect to /home.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.routes.removeEntry">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">removeEntry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.removeEntry" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>This is the removeEntry route endpoint.</p>
+<p>Endpoint to remove event from Google Calendar and Events.json.
+To remove Events.json entry deleteEvent() is called.</p>
+<dl class="simple">
+<dt>POST:</dt><dd><dl class="simple">
+<dt>parameters:</dt><dd><ul class="simple">
+<li><p>name: id
+in: path
+type: string
+required: true
+description: ID of event to remove.</p></li>
+</ul>
+</dd>
+<dt>responses:</dt><dd><dl class="simple">
+<dt>302:</dt><dd><p>description: Event removed, redirect to /scheduler.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.routes.resetScheduler">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">resetScheduler</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.resetScheduler" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Reset APPSCHEDULER job list for actual date</p>
+<p>Create acutal job list and set next restart to 00:00:00.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Vracia</dt>
+<dd class="field-odd"><p>True for success, False otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.routes.scheduler">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">scheduler</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.scheduler" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>This is the scheduler route endpoint.</p>
+<p>If calendarID is ‚-1‘(default value), redirect to /setcalendar.
+Create iframe url for calendar.
+Load event data from events.json.</p>
+<dl>
+<dt>GET:</dt><dd><dl>
+<dt>responses:</dt><dd><dl>
+<dt>200:</dt><dd><p>description: It renders the scheduler.html template.
+parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>name: src
+value: src
+type: string
+description: Calendar URL to display in iframe.</p></li>
+<li><p>name: events
+value: data
+type: json
+description: Events data from Events.json</p></li>
+</ul>
+</div></blockquote>
+</dd>
+<dt>302:</dt><dd><p>description: CalendarID is not set, redirect to /setCalendar.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.routes.setCalendar">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">setCalendar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.setCalendar" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>This is the setCalendar route endpoint.</p>
+<p>If credentials are not set or authenticated, oauth2callback() is called.
+Credentials are stored in flask.session[‚credentials‘].
+Requests calendar list from GoogleCalendarAPI of logged user.</p>
+<dl>
+<dt>GET:</dt><dd><dl>
+<dt>responses:</dt><dd><dl>
+<dt>200:</dt><dd><p>description: It renders account.html.
+parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>name: calendars
+value: calendars
+type: list
+description: List of current user Google Calendars.</p></li>
+</ul>
+</div></blockquote>
+</dd>
+<dt>302:</dt><dd><p>description: Calls oauth2callback() to authenticate user.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.routes.setWeather">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">setWeather</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.setWeather" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>This is preprocesor function to set weather data.</p>
+<p>Requests weather data from api.openweathermap.org,time and date.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Vracia</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>{‚weather‘: json,</dt><dd><p>‘time: time.strftime,
+‚date: time.strftime,
+‚wicon: string}</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Návratový typ</dt>
+<dd class="field-even"><p>A dict mapping keys to the corresponding data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.routes.updateCID">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">updateCID</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.updateCID" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>This is the updateCID route endpoint.</p>
+<p>Endpoint to change value of current_user_calendarID column.</p>
+<dl class="simple">
+<dt>POST:</dt><dd><dl class="simple">
+<dt>parameters:</dt><dd><ul class="simple">
+<li><p>name: cid
+in: path
+type: string
+required: true
+description: New calendarID.</p></li>
+</ul>
+</dd>
+<dt>responses:</dt><dd><dl class="simple">
+<dt>204:</dt><dd><p>description: calendarID column updated.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.routes.work">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">work</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.work" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>This is the work route endpoint.</p>
+<p>Endpoint to execute commands for I/O module.
+Currently in demo mode - print desired values into console.</p>
+<dl class="simple">
+<dt>POST:</dt><dd><dl class="simple">
+<dt>parameters:</dt><dd><ul class="simple">
+<li><p>name: vyska
+in: path
+type: int
+required: true
+description: Height of blinds to be set.</p></li>
+<li><p>name: uhol
+in: path
+type: int
+required: true
+description: Angle of blinds to be set.</p></li>
+</ul>
+</dd>
+<dt>responses:</dt><dd><dl class="simple">
+<dt>302:</dt><dd><p>description: Print data and redirect to /home.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="bakalarka.routes.writeEvent">
+<code class="sig-prename descclassname">bakalarka.routes.</code><code class="sig-name descname">writeEvent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vyska</span></em>, <em class="sig-param"><span class="n">uhol</span></em>, <em class="sig-param"><span class="n">mdate</span></em>, <em class="sig-param"><span class="n">mtime</span></em>, <em class="sig-param"><span class="n">eventID</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bakalarka.routes.writeEvent" title="Trvalý odkaz na túto definíciu">¶</a></dt>
+<dd><p>Add event to Events.json.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parametre</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vyska</strong> – Height of blinds to be set.</p></li>
+<li><p><strong>uhol</strong> – Height of blinds to be set.</p></li>
+<li><p><strong>mdate</strong> – Height of blinds to be set.</p></li>
+<li><p><strong>mtime</strong> – Height of blinds to be set.</p></li>
+<li><p><strong>eventID</strong> – Google calendar eventID.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Vracia</dt>
+<dd class="field-even"><p>True for success, False otherwise.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-bakalarka">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-bakalarka" title="Trvalý odkaz na tento nadpis">¶</a></h2>
+<p>This is the init module.</p>
+<p>Provides basic cofigurations.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">bakalarka</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigácia</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Rýchle hľadanie</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="OK" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, SMolar.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/bakalarka.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
