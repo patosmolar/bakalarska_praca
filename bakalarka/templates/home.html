@@ -1,0 +1,94 @@
+{% extends "layout.html" %} {% block head %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css"> {% endblock head %} {% block content %}
+<form action="{{ url_for('work') }}" id="a" name="a" method="POST"></form>
+<div class="container-fluid pt-0">
+    <div class="row mt-0">
+        <div class="col-2">
+            <div class="row justify-content-end h-100">
+                <div class="col-lx align-content-center mt-5">
+                    <input id="vertical_sl" data-slider-id='vertical_sl' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="100" /> >
+                    <input type="number" min="0" max="100" id="vertical_sl_value" style="width: 2.5vw; min-width: 3vw;" form="a" name="vyska">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-10">
+            <div id="frame">
+                <img id="okno" src="{{ url_for('static', filename='img/oknoP.png') }}" alt="">
+                <img id="background" src="{{ url_for('static', filename='img/ba.jpg') }}" alt="">
+                <div id="sheets" class="pt-4">
+                    <div id="sheet15" class="sheet">
+                    </div>
+                    <div id="sheet14" class="sheet">
+                    </div>
+                    <div id="sheet13" class="sheet">
+                    </div>
+                    <div id="sheet12" class="sheet">
+                    </div>
+                    <div id="sheet11" class="sheet">
+                    </div>
+                    <div id="sheet10" class="sheet">
+                    </div>
+                    <div id="sheet9" class="sheet">
+                    </div>
+                    <div id="sheet8" class="sheet">
+                    </div>
+                    <div id="sheet7" class="sheet">
+                    </div>
+                    <div id="sheet6" class="sheet">
+                    </div>
+                    <div id="sheet5" class="sheet">
+                    </div>
+                    <div id="sheet4" class="sheet">
+                    </div>
+                    <div id="sheet3" class="sheet">
+                    </div>
+                    <div id="sheet2" class="sheet">
+                    </div>
+                    <div id="sheet1" class="sheet">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-sm-3">
+        </div>
+
+        <div class="col-lx-6 w-50">
+            <input id="horizontal_sl" data-slider-id='horizontal_sl' type="text" data-slider-min="-90" data-slider-max="90" data-slider-step="10" data-slider-value="90" />
+        </div>
+
+        <div class="col-sm-3">
+            <input type="number" min="-90" max="90" id="horizontal_sl_value" style="height:100%;" form="a" name="uhol">
+        </div>
+
+
+    </div>
+
+
+    <div class="row mt-4">
+        <div class="col-5"></div>
+        <div class="col-2">
+            <input type="submit" class="btn btn-light-blue" form="a" value="Nastaviť Žalúzie"></button>
+        </div>
+
+        <div class="col-5"></div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<br> {% endblock content %} {% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js "></script>
+<script type="text/javascript " src="{{ url_for( 'static', filename='js/zaluzie.js' ) }}"></script>
+{% endblock scripts %}
