@@ -1,3 +1,0 @@
-Pridávanie užívateľov je zatiaľ iba manuálne cez príkazovy riadok, pre testovanie sa dá použiť 
-meno:  patosmolar@gmail.com
-helo : password
