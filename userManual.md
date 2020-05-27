@@ -1,8 +1,8 @@
 ﻿# iŽalúzie - Použivateľská príručka
 
 # # Pridanie užívateľa do databázy
-```
-1. Po úspešnej inštalácií a aktivovanom virtal enviromente ([Installation Manual](README.md)) spustiť príkazom > python.
+
+1. Po úspešnej inštalácií a aktivovanom virtal enviromente  spustiť príkazom > python.
 2. >>>from bakalarka import db
 3. >>>from bakalarka.models import User 
 4. >>>from flask_bcrypt import Bcrypt
@@ -11,9 +11,9 @@
 7. >>>user = User(username='username',email='email@email.com',password=pw,calendarID='-1')
 8. >>>db.session.add(user)
 9. >>>db.session.commit()
-```
+
 # # Používanie
-```
+
 1. Po úspešnej inštalácií a aktivovanom virtal enviromente ([Installation Manual](README.md)) spustiť príkazom > run.py.
 2. V programe Google Chrome prejdeme na adresu http://127.0.0.1:5000.
 3. Na stránke prihlásenia zadať požadovaný email a heslo.('test@test.com','password')
@@ -28,5 +28,5 @@
 12. Pre odstránenie udalosti vyberieme udalosť zo zoznamu a potvrdíme tlačidlom 'Submit'.
 13. Obe akcie vidíme zpísané v kalendári, a po prejdení na stránku Account sledujeme výpis zoznamu úloh v CMD konzole.
 14. Odhlásenie prebieha pomocou navigačného panela (Logout).
-```
+
 
