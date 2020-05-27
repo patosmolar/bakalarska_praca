@@ -2,11 +2,14 @@
 
 INTERNETOVÁ APLIKÁCIA NA OVLÁDANIE EXTERIÉROVÝCH ŽALÚZIÍ.
 
+Kompletná Programová dokumentácia : https://patosmolar.github.io/bakalarska_praca/
+Užívateľsá príručka : [a relative link](userManual.md)
 
 
-# # Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+# # Inštalačná príručka
+V tejto časti sú obsiahnuté všetky potrebné kroky k spránvej inštalácií.
+Inštalácia pre Win10 a Google Chrome
 ### Predpoklady pre inštaláciu
 Python 3.0+ 
 ```
