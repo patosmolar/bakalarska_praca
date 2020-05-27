@@ -2,8 +2,8 @@
 
 INTERNETOVÁ APLIKÁCIA NA OVLÁDANIE EXTERIÉROVÝCH ŽALÚZIÍ.
 
-Kompletná Programová dokumentácia : https://patosmolar.github.io/bakalarska_praca/
-Užívateľsá príručka : [a relative link](userManual.md)
+Kompletná Programová dokumentácia : https://patosmolar.github.io/bakalarska_praca/  
+Užívateľsá príručka : [User Manual](userManual.md)
 
 
 
