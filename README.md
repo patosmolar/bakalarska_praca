@@ -43,7 +43,7 @@ Naklonovať/stiahnúť repozitár do priečinku, s prednastaveným virtualenv (v
  ```
  Nainštalovať potrebné moduly
   ```
-> pip install requirements.txt 
+> pip install -r requirements.txt 
  ```
  Spustiť hlavný modul
  ```
